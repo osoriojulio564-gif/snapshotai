@@ -10,6 +10,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  /* Force font load even if CSP blocks external fonts */
+  @font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneuepro/v3/B21-MRkh3bk-b2fBtQGBCQo.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/s/bebasneuepro/v3/B21-MRkh3bk-b2fBtQGBCQo.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Hp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2Cp2ywxg089UriASOW45iPNm4.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYvrGyIYSnbKX9.woff2) format('woff2');
+  }
+</style>
+<style>
   :root {
     --mint:#5DE6B3;--teal:#4BACA7;--dark-teal:#255B53;
     --black:#080C0B;--surface:#0E1512;--surface2:#141C19;
