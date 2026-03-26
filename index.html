@@ -65,9 +65,9 @@ body::before{content:’’;position:fixed;inset:0;background-image:url(“data:
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;z-index:500;background:linear-gradient(to bottom,rgba(8,12,11,.95) 0%,transparent 100%);backdrop-filter:blur(2px)}
-.logo{font-family:‘Bebas Neue’,sans-serif;font-size:1.6rem;letter-spacing:.08em;color:var(–white);text-decoration:none}
-.logo span{color:var(–mint)}
-.nav-pill{background:rgba(93,230,179,.08);border:1px solid rgba(93,230,179,.2);border-radius:100px;padding:8px 20px;font-size:.82rem;font-weight:500;color:var(–mint);letter-spacing:.04em;cursor:pointer;transition:all .2s}
+.logo{font-family:‘Bebas Neue’,Impact,Haettenschweiler,‘Arial Narrow Bold’,sans-serif;font-size:1.6rem;letter-spacing:.08em;color:#F0F7F4!important;text-decoration:none}
+.logo span{color:#5DE6B3!important}
+.nav-pill{background:rgba(93,230,179,.08);border:1px solid rgba(93,230,179,.2);border-radius:100px;padding:8px 20px;font-size:.82rem;font-weight:500;color:#5DE6B3!important;letter-spacing:.04em;cursor:pointer;transition:all .2s}
 .nav-pill:hover{background:rgba(93,230,179,.16)}
 
 /* HERO */
@@ -79,13 +79,13 @@ nav{position:fixed;top:0;left:0;right:0;display:flex;align-items:center;justify-
 @keyframes orbFloat{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-30px)}}
 @keyframes orbFloat2{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
 
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(93,230,179,.07);border:1px solid rgba(93,230,179,.25);border-radius:100px;padding:6px 16px 6px 8px;font-size:.75rem;font-weight:500;color:var(–mint);letter-spacing:.06em;text-transform:uppercase;margin-bottom:32px;opacity:0;animation:fadeUp .8s .2s forwards}
-.badge-dot{width:6px;height:6px;background:var(–mint);border-radius:50%;animation:pulse 2s infinite}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(93,230,179,.07);border:1px solid rgba(93,230,179,.25);border-radius:100px;padding:6px 16px 6px 8px;font-size:.75rem;font-weight:500;color:#5DE6B3!important;letter-spacing:.06em;text-transform:uppercase;margin-bottom:32px;opacity:0;animation:fadeUp .8s .2s forwards}
+.badge-dot{width:6px;height:6px;background:#5DE6B3;border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
 
-h1{font-family:‘Bebas Neue’,sans-serif;font-size:clamp(4rem,10vw,8.5rem);line-height:.92;letter-spacing:.01em;text-align:center;max-width:900px;opacity:0;animation:fadeUp .8s .4s forwards}
-h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(–mint)}
-h1 .accent{color:var(–mint)}
+h1{font-family:‘Bebas Neue’,Impact,Haettenschweiler,‘Arial Narrow Bold’,sans-serif;font-size:clamp(4rem,10vw,8.5rem);line-height:.92;letter-spacing:.01em;text-align:center;max-width:900px;opacity:0;animation:fadeUp .8s .4s forwards;color:#F0F7F4!important}
+h1 em{font-style:normal;color:transparent!important;-webkit-text-stroke:2px #5DE6B3;text-stroke:2px #5DE6B3}
+h1 .accent{color:#5DE6B3!important}
 .hero-sub{font-size:clamp(1rem,2vw,1.2rem);color:rgba(240,247,244,.55);font-weight:300;text-align:center;max-width:540px;margin-top:28px;line-height:1.7;opacity:0;animation:fadeUp .8s .6s forwards}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
@@ -96,8 +96,8 @@ h1 .accent{color:var(–mint)}
 .url-prefix{display:flex;align-items:center;padding:0 0 0 20px;font-family:‘DM Mono’,monospace;font-size:.85rem;color:var(–muted);white-space:nowrap;user-select:none}
 #url-input{flex:1;background:transparent;border:none;outline:none;padding:20px 16px;font-family:‘DM Mono’,monospace;font-size:.95rem;color:var(–white);width:100%}
 #url-input::placeholder{color:var(–muted)}
-.scan-btn{margin:8px;padding:14px 28px;background:var(–mint);color:var(–black);border:none;border-radius:10px;font-family:‘DM Sans’,sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.03em;cursor:pointer;white-space:nowrap;transition:all .2s}
-.scan-btn:hover{background:#6DFFCA;transform:translateY(-1px);box-shadow:0 8px 24px rgba(93,230,179,.3)}
+.scan-btn{margin:8px;padding:14px 28px;background:#5DE6B3!important;color:#080C0B!important;border:none;border-radius:10px;font-family:‘DM Sans’,sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.03em;cursor:pointer;white-space:nowrap;transition:all .2s}
+.scan-btn:hover{background:#6DFFCA!important;transform:translateY(-1px);box-shadow:0 8px 24px rgba(93,230,179,.3)}
 .scan-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .input-note{text-align:center;font-size:.78rem;color:var(–muted);margin-top:12px;letter-spacing:.02em}
 .input-note span{color:var(–mint);font-weight:500}
@@ -198,7 +198,7 @@ h1 .accent{color:var(–mint)}
 /* SECTIONS */
 .section{padding:100px 24px;max-width:1100px;margin:0 auto}
 .section-label{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(–mint);margin-bottom:16px}
-.section-title{font-family:‘Bebas Neue’,sans-serif;font-size:clamp(2.8rem,5vw,4.5rem);line-height:.95;margin-bottom:16px}
+.section-title{font-family:‘Bebas Neue’,Impact,Haettenschweiler,‘Arial Narrow Bold’,sans-serif;font-size:clamp(2.8rem,5vw,4.5rem);line-height:.95;margin-bottom:16px;color:#F0F7F4!important}
 .section-sub{font-size:1rem;color:rgba(240,247,244,.5);max-width:480px;line-height:1.7;margin-bottom:60px}
 
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;background:rgba(93,230,179,.08);border-radius:20px;overflow:hidden;border:1px solid rgba(93,230,179,.12)}
@@ -215,7 +215,7 @@ h1 .accent{color:var(–mint)}
 .pricing-eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(–mint);font-weight:600;margin-bottom:24px}
 .price-display{display:flex;align-items:flex-start;justify-content:center;gap:4px;margin-bottom:8px}
 .price-dollar{font-size:1.4rem;font-weight:700;color:var(–muted);margin-top:12px}
-.price-amount{font-family:‘Bebas Neue’,sans-serif;font-size:6rem;line-height:1;color:var(–white);letter-spacing:-.02em}
+.price-amount{font-family:‘Bebas Neue’,Impact,Haettenschweiler,‘Arial Narrow Bold’,sans-serif;font-size:6rem;line-height:1;color:#F0F7F4!important;letter-spacing:-.02em}
 .price-note{font-size:.82rem;color:var(–muted);margin-bottom:36px}
 .price-features{list-style:none;text-align:left;margin-bottom:36px;display:flex;flex-direction:column;gap:14px}
 .price-features li{display:flex;align-items:center;gap:12px;font-size:.9rem;color:rgba(240,247,244,.8)}
