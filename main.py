@@ -1,4 +1,3 @@
-“””
 SnapshotAI — Website Intelligence Report Generator
 FastAPI app: scrapes a URL, calls Claude, generates a branded PDF.
 Deploy to Render as a Web Service.
